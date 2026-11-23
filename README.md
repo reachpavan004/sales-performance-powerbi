@@ -1,4 +1,5 @@
 # Sales Performance – Power BI Project (.pbip)
+![Dashboard](Screenshot%202026-11-23%20161104.png)
 
 Rebuild of the "Sales Performance Dashboard" web artifact using the same data
 (Jan 2023 – Dec 2025, delivered orders, INR).
