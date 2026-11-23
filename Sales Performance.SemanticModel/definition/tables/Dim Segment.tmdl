@@ -1,0 +1,31 @@
+table 'Dim Segment'
+	lineageTag: 1b2286d3-fc16-4279-a008-67344835a42c
+
+	column SegmentKey
+		dataType: int64
+		isHidden
+		lineageTag: a2ec5555-3bdf-462a-9732-b01f93e3c664
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column 'Customer Segment'
+		dataType: string
+		lineageTag: 69e74389-0392-4a62-9e50-c03a2b986eda
+		summarizeBy: none
+		sourceColumn: Segment
+
+	partition 'Dim Segment' = m
+		mode: import
+		source =
+				let
+					Source = #table(
+						type table [SegmentKey = Int64.Type, Segment = text],
+						{
+							{0,"Consumer"},
+							{1,"Corporate"},
+							{2,"Small Business"}
+						}
+					)
+				in
+					Source
+

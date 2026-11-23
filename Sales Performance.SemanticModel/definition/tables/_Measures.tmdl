@@ -1,0 +1,241 @@
+table _Measures
+	lineageTag: 1f522052-d6fe-42a3-a336-e6ea5bdca186
+
+	measure 'Total Sales' = SUM('Fact Sales'[Sales])
+		formatString: "₹"#,0
+		displayFolder: KPIs
+		lineageTag: f2c77f95-7834-48a0-9108-906c8c4db412
+
+	measure 'Total Profit' = SUM('Fact Sales'[Profit])
+		formatString: "₹"#,0
+		displayFolder: KPIs
+		lineageTag: 964fc2d7-93eb-4d24-9ca7-f31e8faf7714
+
+	measure 'Profit Margin %' = DIVIDE([Total Profit], [Total Sales])
+		formatString: 0.0%
+		displayFolder: KPIs
+		lineageTag: 2d5345e7-50f7-4a14-90ef-b958a93a6239
+
+	measure 'Orders Delivered' = SUM('Fact Sales'[Delivered Orders])
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: baaecb12-19bb-48dc-acb9-1b1b91b35294
+
+	measure 'All Orders' = SUM('Fact Sales'[All Orders])
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: 1a4e3456-c8a3-4c5c-b3db-3f5c8f0fd80a
+
+	measure 'Units Sold' = SUM('Fact Sales'[Units Sold])
+		formatString: #,0
+		displayFolder: KPIs
+		lineageTag: 41fd5cbe-6db4-43dc-9537-b3d4abfaa254
+
+	measure 'Avg Order Value' = DIVIDE([Total Sales], [Orders Delivered])
+		formatString: "₹"#,0
+		displayFolder: KPIs
+		lineageTag: 194fd411-db10-4da3-83f9-49ae50ab6f9c
+
+	measure 'Return Cancel Rate' = IF([All Orders] > 0, 1 - DIVIDE([Orders Delivered], [All Orders]), 0)
+		formatString: 0.0%
+		displayFolder: KPIs
+		lineageTag: f29afe51-3d10-49e8-849b-adfa9658f19f
+
+	measure 'Product Sales Amount' = SUM('Fact Product Sales'[Sales])
+		formatString: "₹"#,0
+		displayFolder: Products
+		lineageTag: 76d92d95-00c6-49bd-8215-5a74b50f9880
+
+	measure 'Product Rank' = IF(NOT ISBLANK([Product Sales Amount]), RANKX(ALLSELECTED('Dim Product'[Product]), [Product Sales Amount], , DESC, Skip))
+		formatString: 0
+		displayFolder: Products
+		lineageTag: 20240919-9ad8-428d-b82f-7f0239d5e578
+
+	measure 'Sales (card)' =
+			VAR v = [Total Sales]
+			RETURN
+			IF(ISBLANK(v), "₹0",
+			SWITCH(TRUE(),
+			ABS(v) >= 10000000, "₹" & FORMAT(v / 10000000, "0.00") & " Cr",
+			ABS(v) >= 100000, "₹" & FORMAT(v / 100000, "0.0") & " L",
+			"₹" & FORMAT(v, "#,##0")))
+		displayFolder: Card text
+		lineageTag: d19db30b-f051-4c0e-9049-bdcf199ac206
+
+	measure 'Profit (card)' =
+			VAR v = [Total Profit]
+			RETURN
+			IF(ISBLANK(v), "₹0",
+			SWITCH(TRUE(),
+			ABS(v) >= 10000000, "₹" & FORMAT(v / 10000000, "0.00") & " Cr",
+			ABS(v) >= 100000, "₹" & FORMAT(v / 100000, "0.0") & " L",
+			"₹" & FORMAT(v, "#,##0")))
+		displayFolder: Card text
+		lineageTag: f21c1bd1-f670-4aa1-88ea-fc20fcc475de
+
+	measure 'Avg Order Value (card)' =
+			VAR v = [Avg Order Value]
+			RETURN
+			IF(ISBLANK(v), "₹0",
+			SWITCH(TRUE(),
+			ABS(v) >= 10000000, "₹" & FORMAT(v / 10000000, "0.00") & " Cr",
+			ABS(v) >= 100000, "₹" & FORMAT(v / 100000, "0.0") & " L",
+			"₹" & FORMAT(v, "#,##0")))
+		displayFolder: Card text
+		lineageTag: 6bbff6fc-5a1b-4980-8b40-39d78b69445d
+
+	measure 'Profit Margin (card)' = FORMAT([Profit Margin %], "0.0%")
+		displayFolder: Card text
+		lineageTag: 4079d6e8-3dca-465e-bd17-21eddf1ea5d2
+
+	measure 'Orders Delivered (card)' = FORMAT([Orders Delivered], "#,##0")
+		displayFolder: Card text
+		lineageTag: f9691b8a-8a0e-4698-b3b8-41deb257e20f
+
+	measure 'Sales PY' =
+			VAR y = SELECTEDVALUE('Dim Year'[Year])
+			RETURN
+			IF(NOT ISBLANK(y), CALCULATE([Total Sales], 'Dim Year'[Year] = y - 1))
+		formatString: "₹"#,0
+		displayFolder: Prior year
+		lineageTag: 7db7c89b-8ccd-4987-8a4e-d887e5423216
+
+	measure 'Profit PY' =
+			VAR y = SELECTEDVALUE('Dim Year'[Year])
+			RETURN
+			IF(NOT ISBLANK(y), CALCULATE([Total Profit], 'Dim Year'[Year] = y - 1))
+		formatString: "₹"#,0
+		displayFolder: Prior year
+		lineageTag: 51c4a4a0-ba03-4db8-92d3-b2f910918c0a
+
+	measure 'Orders PY' =
+			VAR y = SELECTEDVALUE('Dim Year'[Year])
+			RETURN
+			IF(NOT ISBLANK(y), CALCULATE([Orders Delivered], 'Dim Year'[Year] = y - 1))
+		formatString: #,0
+		displayFolder: Prior year
+		lineageTag: 705ccc40-0904-466a-af12-ee99873305ef
+
+	measure 'Margin PY' = DIVIDE([Profit PY], [Sales PY])
+		formatString: 0.0%
+		displayFolder: Prior year
+		lineageTag: 5f74923b-2551-4a19-a7d3-1f06905dc063
+
+	measure 'Sales YoY %' = IF(NOT ISBLANK([Sales PY]) && [Sales PY] <> 0, DIVIDE([Total Sales], [Sales PY]) - 1)
+		formatString: 0.0%
+		displayFolder: Prior year
+		lineageTag: ff4ad6c2-ed62-4483-914e-8dbde027fddd
+
+	measure 'Sales YoY Label' =
+			VAR v = [Sales YoY %]
+			RETURN
+			IF(ISBLANK(v), "vs prior year: n/a", IF(v >= 0, "▲ ", "▼ ") & FORMAT(ABS(v), "0.0%") & " vs prior year")
+		displayFolder: Prior year
+		lineageTag: 21219dc0-735c-4ca5-8a22-3b46d7d5b0a7
+
+	measure 'Sales YoY Color' =
+			VAR v = [Sales YoY %]
+			RETURN
+			IF(ISBLANK(v), "#5C6B82", IF(v >= 0, "#0E9F6E", "#D6453B"))
+		displayFolder: Prior year
+		lineageTag: c45f21d5-9ac2-4896-9e3a-133d19e44f36
+
+	measure 'Profit YoY %' = IF(NOT ISBLANK([Profit PY]) && [Profit PY] <> 0, DIVIDE([Total Profit], [Profit PY]) - 1)
+		formatString: 0.0%
+		displayFolder: Prior year
+		lineageTag: 05542379-fbc2-445d-b1d3-4640ede7463a
+
+	measure 'Profit YoY Label' =
+			VAR v = [Profit YoY %]
+			RETURN
+			IF(ISBLANK(v), "vs prior year: n/a", IF(v >= 0, "▲ ", "▼ ") & FORMAT(ABS(v), "0.0%") & " vs prior year")
+		displayFolder: Prior year
+		lineageTag: 4a8cafd6-a5dd-4564-b4f4-d3fffdafe005
+
+	measure 'Profit YoY Color' =
+			VAR v = [Profit YoY %]
+			RETURN
+			IF(ISBLANK(v), "#5C6B82", IF(v >= 0, "#0E9F6E", "#D6453B"))
+		displayFolder: Prior year
+		lineageTag: 8df7bdd5-72f9-41ee-aeb9-fdd34a71c4f8
+
+	measure 'Orders YoY %' = IF(NOT ISBLANK([Orders PY]) && [Orders PY] <> 0, DIVIDE([Orders Delivered], [Orders PY]) - 1)
+		formatString: 0.0%
+		displayFolder: Prior year
+		lineageTag: 26c2dfa6-10c8-4eab-86fd-bb8ae1c57bdb
+
+	measure 'Orders YoY Label' =
+			VAR v = [Orders YoY %]
+			RETURN
+			IF(ISBLANK(v), "vs prior year: n/a", IF(v >= 0, "▲ ", "▼ ") & FORMAT(ABS(v), "0.0%") & " vs prior year")
+		displayFolder: Prior year
+		lineageTag: 2575b3b3-1378-4dea-8f52-d61bd17b3757
+
+	measure 'Orders YoY Color' =
+			VAR v = [Orders YoY %]
+			RETURN
+			IF(ISBLANK(v), "#5C6B82", IF(v >= 0, "#0E9F6E", "#D6453B"))
+		displayFolder: Prior year
+		lineageTag: 20b4ec30-44ab-46fe-a549-4417e8c77487
+
+	measure 'Margin Change (pts)' = IF(NOT ISBLANK([Margin PY]), ([Profit Margin %] - [Margin PY]) * 100)
+		formatString: 0.0
+		displayFolder: Prior year
+		lineageTag: 4f1cdb6b-4b1a-4138-941b-33a637d2f4fd
+
+	measure 'Margin YoY Label' =
+			VAR v = [Margin Change (pts)]
+			RETURN
+			IF(ISBLANK(v), "vs prior year: n/a", IF(v >= 0, "▲ ", "▼ ") & FORMAT(ABS(v), "0.0") & " pts vs prior year")
+		displayFolder: Prior year
+		lineageTag: 22e15c6a-d089-46b2-ae27-0230b7ca4ec2
+
+	measure 'Margin YoY Color' =
+			VAR v = [Margin Change (pts)]
+			RETURN
+			IF(ISBLANK(v), "#5C6B82", IF(v >= 0, "#0E9F6E", "#D6453B"))
+		displayFolder: Prior year
+		lineageTag: 45685e1d-4d68-432c-939d-00e9d2868136
+
+	measure 'Rate Footnote' = "Return and cancel rate " & FORMAT([Return Cancel Rate], "0.0%")
+		displayFolder: Prior year
+		lineageTag: a6124e69-beff-4da6-9a20-a3fee9ed6068
+
+	measure 'Insight Top Category' =
+			VAR t = TOPN(1, ADDCOLUMNS(VALUES('Dim Category'[Category]), "SalesVal", [Total Sales]), [SalesVal], DESC)
+			VAR total = [Total Sales]
+			RETURN
+			IF(total > 0, MAXX(t, 'Dim Category'[Category]) & " · " & FORMAT(DIVIDE(MAXX(t, [SalesVal]), total), "0%") & " of sales", "No orders match")
+		displayFolder: Insights
+		lineageTag: 2a5c4cff-fcd7-493c-9ce8-c64d31403410
+
+	measure 'Insight Top Region' =
+			VAR t = TOPN(1, ADDCOLUMNS(VALUES('Dim Region'[Region]), "SalesVal", [Total Sales]), [SalesVal], DESC)
+			VAR total = [Total Sales]
+			RETURN
+			IF(total > 0, MAXX(t, 'Dim Region'[Region]) & " · " & FORMAT(DIVIDE(MAXX(t, [SalesVal]), total), "0%") & " of sales", "No orders match")
+		displayFolder: Insights
+		lineageTag: afd92e99-e8ba-4a2d-bf49-fecba276006a
+
+	measure 'Insight Best Seller' =
+			VAR t = TOPN(1, ADDCOLUMNS(VALUES('Dim Product'[Product]), "SalesVal", [Product Sales Amount]), [SalesVal], DESC)
+			RETURN
+			IF([Product Sales Amount] > 0, MAXX(t, 'Dim Product'[Product]), "No orders match")
+		displayFolder: Insights
+		lineageTag: 9f93ff63-4830-4bf7-b735-a20e05eb0cba
+
+	measure 'Insight Return Rate' = IF([All Orders] > 0, FORMAT([Return Cancel Rate], "0.0%") & " of orders", "No orders match")
+		displayFolder: Insights
+		lineageTag: 84f99243-4c17-453d-8c17-1b25895664ad
+
+	column Placeholder
+		dataType: string
+		isHidden
+		lineageTag: 876f9201-8150-43f0-8883-da2e1dcda1f9
+		summarizeBy: none
+		sourceColumn: Placeholder
+
+	partition _Measures = m
+		mode: import
+		source = #table(type table [Placeholder = text], {})
+

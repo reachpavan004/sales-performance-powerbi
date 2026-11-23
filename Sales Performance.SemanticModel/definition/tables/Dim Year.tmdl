@@ -1,0 +1,17 @@
+table 'Dim Year'
+	lineageTag: 60e5c871-8249-4c19-827a-958e1b597003
+
+	column Year
+		dataType: int64
+		lineageTag: 7aad7b21-f697-4ca0-ab4d-f352be930e58
+		summarizeBy: none
+		sourceColumn: Year
+
+	partition 'Dim Year' = m
+		mode: import
+		source =
+				let
+					Source = #table(type table [Year = Int64.Type], {{2023},{2024},{2025}})
+				in
+					Source
+

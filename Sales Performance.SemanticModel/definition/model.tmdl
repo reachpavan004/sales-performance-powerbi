@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["_Measures","Fact Sales","Fact Product Sales","Dim Calendar","Dim Year","Dim Region","Dim Category","Dim Segment","Dim Product"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table _Measures
+ref table 'Fact Sales'
+ref table 'Fact Product Sales'
+ref table 'Dim Calendar'
+ref table 'Dim Year'
+ref table 'Dim Region'
+ref table 'Dim Category'
+ref table 'Dim Segment'
+ref table 'Dim Product'
+ref table DateTableTemplate_70e28743-9237-4099-b115-81bb4590dbde
+ref table LocalDateTable_c70a33d1-d607-4233-9c9e-6708b8f96cdb
+

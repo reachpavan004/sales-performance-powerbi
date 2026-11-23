@@ -1,0 +1,45 @@
+relationship 5c455488-2dab-5e2e-8244-3833a2ed9ca4
+	fromColumn: 'Fact Sales'.RegionKey
+	toColumn: 'Dim Region'.RegionKey
+
+relationship dd4af6ed-bbed-5527-8705-bb07f689f903
+	fromColumn: 'Fact Sales'.CategoryKey
+	toColumn: 'Dim Category'.CategoryKey
+
+relationship dde765f7-b9d3-5df9-b90f-ab86e69131dc
+	fromColumn: 'Fact Sales'.SegmentKey
+	toColumn: 'Dim Segment'.SegmentKey
+
+relationship b065b8e3-4d7b-5585-a08c-96ff1fb3dc13
+	fromColumn: 'Fact Sales'.Date
+	toColumn: 'Dim Calendar'.Date
+
+relationship 04c3b2a2-0d07-52de-9aa0-c0090281e4d9
+	fromColumn: 'Dim Calendar'.Year
+	toColumn: 'Dim Year'.Year
+
+relationship 1c591ddd-2c92-507c-ba28-d47c80946f64
+	fromColumn: 'Fact Product Sales'.Year
+	toColumn: 'Dim Year'.Year
+
+relationship 46126f94-780a-538e-bb46-6b46a0065525
+	fromColumn: 'Fact Product Sales'.RegionKey
+	toColumn: 'Dim Region'.RegionKey
+
+relationship cf231faf-ba58-5356-bca5-8963e464c9ea
+	fromColumn: 'Fact Product Sales'.SegmentKey
+	toColumn: 'Dim Segment'.SegmentKey
+
+relationship e1bac4db-fc4c-56d1-b22e-96abc465e4e9
+	fromColumn: 'Fact Product Sales'.ProductKey
+	toColumn: 'Dim Product'.ProductKey
+
+relationship 2678e1fc-7439-551d-9c39-e51bc3474a7b
+	fromColumn: 'Dim Product'.CategoryKey
+	toColumn: 'Dim Category'.CategoryKey
+
+relationship 0b31a088-5791-4f98-8267-b374299549c7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim Calendar'.Date
+	toColumn: LocalDateTable_c70a33d1-d607-4233-9c9e-6708b8f96cdb.Date
+

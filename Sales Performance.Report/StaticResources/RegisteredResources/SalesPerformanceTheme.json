@@ -1,0 +1,29 @@
+{
+  "name": "Sales Performance",
+  "dataColors": [
+    "#3B6FD6",
+    "#F0A030",
+    "#0E9F8E",
+    "#D6453B",
+    "#7A5AF8",
+    "#5C6B82",
+    "#0E9F6E",
+    "#E879A6"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#12203A",
+  "tableAccent": "#3B6FD6",
+  "good": "#0E9F6E",
+  "bad": "#D6453B",
+  "neutral": "#F0A030",
+  "textClasses": {
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#5C6B82"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#12203A"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+table 'Dim Category'
+	lineageTag: f693d031-214f-416d-ac39-76d4273dbf77
+
+	column CategoryKey
+		dataType: int64
+		isHidden
+		lineageTag: 3dc22483-0f96-47ad-8263-007edeb3dc21
+		summarizeBy: none
+		sourceColumn: CategoryKey
+
+	column Category
+		dataType: string
+		lineageTag: 0609d155-cbae-456c-a1c4-1328e1f83930
+		summarizeBy: none
+		sourceColumn: Category
+
+	partition 'Dim Category' = m
+		mode: import
+		source =
+				let
+					Source = #table(
+						type table [CategoryKey = Int64.Type, Category = text],
+						{
+							{0,"Apparel"},
+							{1,"Electronics"},
+							{2,"Furniture"},
+							{3,"Stationery"}
+						}
+					)
+				in
+					Source
+

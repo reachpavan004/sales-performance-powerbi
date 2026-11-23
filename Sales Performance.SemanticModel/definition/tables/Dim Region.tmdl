@@ -1,0 +1,32 @@
+table 'Dim Region'
+	lineageTag: 052273c0-a462-4074-bca6-1f667c23765d
+
+	column RegionKey
+		dataType: int64
+		isHidden
+		lineageTag: 08684a32-d563-49b6-b27a-a980a69312b3
+		summarizeBy: none
+		sourceColumn: RegionKey
+
+	column Region
+		dataType: string
+		lineageTag: 25bbe756-9855-4316-b595-14496afacb58
+		summarizeBy: none
+		sourceColumn: Region
+
+	partition 'Dim Region' = m
+		mode: import
+		source =
+				let
+					Source = #table(
+						type table [RegionKey = Int64.Type, Region = text],
+						{
+							{0,"East"},
+							{1,"North"},
+							{2,"South"},
+							{3,"West"}
+						}
+					)
+				in
+					Source
+

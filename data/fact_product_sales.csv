@@ -1,0 +1,526 @@
+Year,Region,Product,Category,Customer Segment,Sales,Profit
+2023,East,Laptop,Electronics,Consumer,52000,9360
+2023,East,Headphones,Electronics,Consumer,32900,10150
+2023,East,Headphones,Electronics,Small Business,17500,6125
+2023,East,Smartwatch,Electronics,Consumer,15200,3680
+2023,East,Smartwatch,Electronics,Small Business,16000,4480
+2023,East,Tablet,Electronics,Consumer,21000,3570
+2023,East,Tablet,Electronics,Corporate,19950,2520
+2023,East,Tablet,Electronics,Small Business,40950,6090
+2023,East,Office Chair,Furniture,Corporate,7125,1875
+2023,East,Office Chair,Furniture,Small Business,7500,2250
+2023,East,Standing Desk,Furniture,Consumer,44100,4680
+2023,East,Standing Desk,Furniture,Small Business,28800,2520
+2023,East,Bookshelf,Furniture,Consumer,18200,4940
+2023,East,Bookshelf,Furniture,Corporate,16900,3640
+2023,East,Bookshelf,Furniture,Small Business,24700,7020
+2023,East,Sofa,Furniture,Consumer,26600,5600
+2023,East,Sofa,Furniture,Corporate,46200,4200
+2023,East,Sofa,Furniture,Small Business,28000,7000
+2023,East,Notebook Pack,Stationery,Consumer,3325,1393
+2023,East,Notebook Pack,Stationery,Corporate,925,373
+2023,East,Notebook Pack,Stationery,Small Business,5150,2114
+2023,East,Pen Set,Stationery,Consumer,2106,936
+2023,East,Pen Set,Stationery,Corporate,2430,1080
+2023,East,Pen Set,Stationery,Small Business,1647,747
+2023,East,Printer Paper,Stationery,Consumer,1176,396
+2023,East,Printer Paper,Stationery,Corporate,1974,674
+2023,East,Printer Paper,Stationery,Small Business,6510,2090
+2023,East,Desk Organizer,Stationery,Consumer,2502,994
+2023,East,Desk Organizer,Stationery,Corporate,1170,416
+2023,East,Desk Organizer,Stationery,Small Business,1235,481
+2023,East,Running Shoes,Apparel,Consumer,22890,7770
+2023,East,Running Shoes,Apparel,Corporate,3780,1260
+2023,East,Running Shoes,Apparel,Small Business,11760,4200
+2023,East,Jacket,Apparel,Consumer,7600,2888
+2023,East,Jacket,Apparel,Small Business,10830,3762
+2023,East,T-Shirt,Apparel,Consumer,1800,864
+2023,East,T-Shirt,Apparel,Corporate,3240,1368
+2023,East,T-Shirt,Apparel,Small Business,3420,1548
+2023,East,Backpack,Apparel,Consumer,5940,2112
+2023,East,Backpack,Apparel,Corporate,6600,2772
+2023,East,Backpack,Apparel,Small Business,13200,5544
+2023,North,Laptop,Electronics,Corporate,83200,-2080
+2023,North,Smartphone,Electronics,Consumer,22800,2400
+2023,North,Headphones,Electronics,Consumer,9800,2975
+2023,North,Headphones,Electronics,Corporate,12600,3500
+2023,North,Headphones,Electronics,Small Business,43750,11900
+2023,North,Smartwatch,Electronics,Corporate,16000,4480
+2023,North,Smartwatch,Electronics,Small Business,20000,2720
+2023,North,Tablet,Electronics,Small Business,16800,-630
+2023,North,Office Chair,Furniture,Consumer,14250,3750
+2023,North,Office Chair,Furniture,Corporate,27000,6000
+2023,North,Office Chair,Furniture,Small Business,13500,3000
+2023,North,Standing Desk,Furniture,Consumer,18000,4860
+2023,North,Standing Desk,Furniture,Corporate,46800,7380
+2023,North,Standing Desk,Furniture,Small Business,45000,5580
+2023,North,Bookshelf,Furniture,Consumer,30225,8125
+2023,North,Bookshelf,Furniture,Corporate,5525,1105
+2023,North,Bookshelf,Furniture,Small Business,11050,2210
+2023,North,Sofa,Furniture,Consumer,28000,7000
+2023,North,Sofa,Furniture,Small Business,23800,2800
+2023,North,Notebook Pack,Stationery,Consumer,8812,3568
+2023,North,Notebook Pack,Stationery,Corporate,5450,2276
+2023,North,Notebook Pack,Stationery,Small Business,3725,1517
+2023,North,Pen Set,Stationery,Consumer,4203,1953
+2023,North,Pen Set,Stationery,Corporate,5076,2466
+2023,North,Pen Set,Stationery,Small Business,3213,1503
+2023,North,Printer Paper,Stationery,Consumer,5124,1744
+2023,North,Printer Paper,Stationery,Corporate,6972,2552
+2023,North,Printer Paper,Stationery,Small Business,6930,2510
+2023,North,Desk Organizer,Stationery,Consumer,13618,5324
+2023,North,Desk Organizer,Stationery,Corporate,2340,832
+2023,North,Desk Organizer,Stationery,Small Business,6922,2776
+2023,North,Running Shoes,Apparel,Consumer,37170,14490
+2023,North,Running Shoes,Apparel,Corporate,39480,14280
+2023,North,Running Shoes,Apparel,Small Business,26250,8610
+2023,North,Jacket,Apparel,Consumer,14440,5016
+2023,North,Jacket,Apparel,Corporate,10640,3572
+2023,North,Jacket,Apparel,Small Business,35150,11590
+2023,North,T-Shirt,Apparel,Consumer,4320,1980
+2023,North,T-Shirt,Apparel,Corporate,5175,2367
+2023,North,T-Shirt,Apparel,Small Business,3600,1260
+2023,North,Backpack,Apparel,Consumer,21120,7084
+2023,North,Backpack,Apparel,Corporate,28710,9570
+2023,North,Backpack,Apparel,Small Business,12760,3828
+2023,South,Laptop,Electronics,Corporate,41600,-1040
+2023,South,Laptop,Electronics,Small Business,85800,520
+2023,South,Smartphone,Electronics,Small Business,22800,2400
+2023,South,Headphones,Electronics,Consumer,24500,8575
+2023,South,Headphones,Electronics,Corporate,17850,4200
+2023,South,Headphones,Electronics,Small Business,28875,8400
+2023,South,Smartwatch,Electronics,Corporate,6400,640
+2023,South,Smartwatch,Electronics,Small Business,8000,2240
+2023,South,Tablet,Electronics,Consumer,81900,12180
+2023,South,Tablet,Electronics,Small Business,17850,420
+2023,South,Office Chair,Furniture,Consumer,7125,1875
+2023,South,Office Chair,Furniture,Corporate,57000,15000
+2023,South,Office Chair,Furniture,Small Business,6375,1125
+2023,South,Standing Desk,Furniture,Corporate,54000,14580
+2023,South,Standing Desk,Furniture,Small Business,64800,12240
+2023,South,Bookshelf,Furniture,Consumer,5200,780
+2023,South,Bookshelf,Furniture,Corporate,28600,6500
+2023,South,Bookshelf,Furniture,Small Business,11700,2860
+2023,South,Sofa,Furniture,Corporate,26600,5600
+2023,South,Notebook Pack,Stationery,Consumer,6412,2686
+2023,South,Notebook Pack,Stationery,Corporate,1950,708
+2023,South,Notebook Pack,Stationery,Small Business,3512,1304
+2023,South,Pen Set,Stationery,Consumer,2358,1098
+2023,South,Pen Set,Stationery,Corporate,2871,1341
+2023,South,Pen Set,Stationery,Small Business,1638,648
+2023,South,Printer Paper,Stationery,Consumer,7686,2746
+2023,South,Printer Paper,Stationery,Corporate,11130,3590
+2023,South,Printer Paper,Stationery,Small Business,5460,1560
+2023,South,Desk Organizer,Stationery,Consumer,12870,4953
+2023,South,Desk Organizer,Stationery,Corporate,3705,1443
+2023,South,Desk Organizer,Stationery,Small Business,4258,1618
+2023,South,Running Shoes,Apparel,Corporate,70560,25200
+2023,South,Running Shoes,Apparel,Small Business,27510,7350
+2023,South,Jacket,Apparel,Consumer,3040,684
+2023,South,Jacket,Apparel,Corporate,3420,1064
+2023,South,Jacket,Apparel,Small Business,10260,3192
+2023,South,T-Shirt,Apparel,Corporate,7605,2925
+2023,South,T-Shirt,Apparel,Small Business,12285,5733
+2023,South,Backpack,Apparel,Consumer,4290,1738
+2023,South,Backpack,Apparel,Small Business,20350,7590
+2023,West,Laptop,Electronics,Corporate,52000,9360
+2023,West,Smartphone,Electronics,Consumer,21600,1200
+2023,West,Headphones,Electronics,Consumer,35875,10850
+2023,West,Headphones,Electronics,Corporate,18375,4725
+2023,West,Headphones,Electronics,Small Business,9450,2625
+2023,West,Smartwatch,Electronics,Consumer,16000,4480
+2023,West,Smartwatch,Electronics,Corporate,24000,6720
+2023,West,Smartwatch,Electronics,Small Business,43600,9040
+2023,West,Tablet,Electronics,Consumer,21000,3570
+2023,West,Tablet,Electronics,Small Business,98700,11550
+2023,West,Office Chair,Furniture,Corporate,34500,8250
+2023,West,Office Chair,Furniture,Small Business,50625,13875
+2023,West,Standing Desk,Furniture,Consumer,15300,2160
+2023,West,Standing Desk,Furniture,Corporate,44100,4680
+2023,West,Standing Desk,Furniture,Small Business,18000,4860
+2023,West,Bookshelf,Furniture,Consumer,59475,15275
+2023,West,Bookshelf,Furniture,Corporate,13000,4160
+2023,West,Bookshelf,Furniture,Small Business,21775,4095
+2023,West,Sofa,Furniture,Consumer,54600,12600
+2023,West,Sofa,Furniture,Corporate,50400,8400
+2023,West,Sofa,Furniture,Small Business,22400,1400
+2023,West,Notebook Pack,Stationery,Consumer,6500,2360
+2023,West,Notebook Pack,Stationery,Corporate,5600,2288
+2023,West,Notebook Pack,Stationery,Small Business,8675,3569
+2023,West,Pen Set,Stationery,Consumer,5958,2718
+2023,West,Pen Set,Stationery,Corporate,5283,2313
+2023,West,Pen Set,Stationery,Small Business,4644,2214
+2023,West,Printer Paper,Stationery,Consumer,5166,1786
+2023,West,Printer Paper,Stationery,Corporate,1890,590
+2023,West,Printer Paper,Stationery,Small Business,7959,2759
+2023,West,Desk Organizer,Stationery,Consumer,10628,3842
+2023,West,Desk Organizer,Stationery,Corporate,10042,4010
+2023,West,Desk Organizer,Stationery,Small Business,6272,2502
+2023,West,Running Shoes,Apparel,Consumer,31710,11550
+2023,West,Running Shoes,Apparel,Small Business,46200,15960
+2023,West,Jacket,Apparel,Consumer,54150,18810
+2023,West,Jacket,Apparel,Corporate,25840,9348
+2023,West,Jacket,Apparel,Small Business,96140,32528
+2023,West,T-Shirt,Apparel,Consumer,3150,1278
+2023,West,T-Shirt,Apparel,Corporate,9630,4014
+2023,West,T-Shirt,Apparel,Small Business,14445,6489
+2023,West,Backpack,Apparel,Consumer,26180,9592
+2023,West,Backpack,Apparel,Corporate,11660,4004
+2023,West,Backpack,Apparel,Small Business,13860,4928
+2024,East,Laptop,Electronics,Consumer,44200,1560
+2024,East,Smartphone,Electronics,Consumer,88800,7200
+2024,East,Smartphone,Electronics,Small Business,22800,2400
+2024,East,Headphones,Electronics,Consumer,15925,4550
+2024,East,Headphones,Electronics,Corporate,3150,875
+2024,East,Headphones,Electronics,Small Business,24150,8225
+2024,East,Smartwatch,Electronics,Consumer,7200,1440
+2024,East,Smartwatch,Electronics,Corporate,8000,2240
+2024,East,Smartwatch,Electronics,Small Business,23200,5920
+2024,East,Tablet,Electronics,Corporate,21000,3570
+2024,East,Tablet,Electronics,Small Business,21000,3570
+2024,East,Office Chair,Furniture,Consumer,12000,1500
+2024,East,Office Chair,Furniture,Small Business,20250,4500
+2024,East,Standing Desk,Furniture,Consumer,51300,11880
+2024,East,Standing Desk,Furniture,Corporate,16200,3060
+2024,East,Standing Desk,Furniture,Small Business,66600,14040
+2024,East,Bookshelf,Furniture,Corporate,6175,1755
+2024,East,Notebook Pack,Stationery,Consumer,2950,1156
+2024,East,Notebook Pack,Stationery,Corporate,5025,2127
+2024,East,Notebook Pack,Stationery,Small Business,2275,895
+2024,East,Pen Set,Stationery,Consumer,4302,2052
+2024,East,Pen Set,Stationery,Corporate,648,288
+2024,East,Pen Set,Stationery,Small Business,5958,2628
+2024,East,Printer Paper,Stationery,Consumer,3108,1028
+2024,East,Printer Paper,Stationery,Corporate,3969,1369
+2024,East,Printer Paper,Stationery,Small Business,6993,2313
+2024,East,Desk Organizer,Stationery,Consumer,4420,1404
+2024,East,Desk Organizer,Stationery,Corporate,4810,1794
+2024,East,Desk Organizer,Stationery,Small Business,9912,3504
+2024,East,Running Shoes,Apparel,Consumer,4200,1680
+2024,East,Running Shoes,Apparel,Small Business,28980,8820
+2024,East,Jacket,Apparel,Corporate,27360,8512
+2024,East,Jacket,Apparel,Small Business,65550,20786
+2024,East,T-Shirt,Apparel,Consumer,1665,729
+2024,East,T-Shirt,Apparel,Corporate,2700,1296
+2024,East,T-Shirt,Apparel,Small Business,11565,4545
+2024,East,Backpack,Apparel,Consumer,42900,17380
+2024,East,Backpack,Apparel,Corporate,23980,8668
+2024,East,Backpack,Apparel,Small Business,18920,7436
+2024,North,Laptop,Electronics,Consumer,145600,17680
+2024,North,Laptop,Electronics,Corporate,98800,13520
+2024,North,Smartphone,Electronics,Consumer,22800,2400
+2024,North,Smartphone,Electronics,Corporate,63600,2400
+2024,North,Smartphone,Electronics,Small Business,24000,3600
+2024,North,Headphones,Electronics,Consumer,42700,13125
+2024,North,Headphones,Electronics,Corporate,9975,3150
+2024,North,Headphones,Electronics,Small Business,17500,6125
+2024,North,Smartwatch,Electronics,Consumer,6400,640
+2024,North,Smartwatch,Electronics,Corporate,22000,4720
+2024,North,Smartwatch,Electronics,Small Business,8000,2240
+2024,North,Tablet,Electronics,Consumer,16800,-630
+2024,North,Tablet,Electronics,Corporate,42000,7140
+2024,North,Tablet,Electronics,Small Business,21000,3570
+2024,North,Office Chair,Furniture,Consumer,19875,4125
+2024,North,Office Chair,Furniture,Corporate,14250,3750
+2024,North,Office Chair,Furniture,Small Business,25500,4500
+2024,North,Standing Desk,Furniture,Consumer,65700,13140
+2024,North,Standing Desk,Furniture,Corporate,82800,17100
+2024,North,Standing Desk,Furniture,Small Business,14400,1260
+2024,North,Bookshelf,Furniture,Consumer,23075,5395
+2024,North,Bookshelf,Furniture,Corporate,16900,3640
+2024,North,Sofa,Furniture,Corporate,23800,2800
+2024,North,Sofa,Furniture,Small Business,25200,4200
+2024,North,Notebook Pack,Stationery,Consumer,9912,3978
+2024,North,Notebook Pack,Stationery,Corporate,6775,2773
+2024,North,Notebook Pack,Stationery,Small Business,6500,2498
+2024,North,Pen Set,Stationery,Consumer,9279,4239
+2024,North,Pen Set,Stationery,Corporate,6147,2907
+2024,North,Pen Set,Stationery,Small Business,3348,1548
+2024,North,Printer Paper,Stationery,Consumer,9639,3399
+2024,North,Printer Paper,Stationery,Corporate,5691,1531
+2024,North,Printer Paper,Stationery,Small Business,5523,1883
+2024,North,Desk Organizer,Stationery,Consumer,18330,7397
+2024,North,Desk Organizer,Stationery,Corporate,7540,3016
+2024,North,Desk Organizer,Stationery,Small Business,10855,4069
+2024,North,Running Shoes,Apparel,Consumer,45570,15330
+2024,North,Running Shoes,Apparel,Corporate,46620,16380
+2024,North,Running Shoes,Apparel,Small Business,51450,18690
+2024,North,Jacket,Apparel,Corporate,49020,16036
+2024,North,Jacket,Apparel,Small Business,39900,13984
+2024,North,T-Shirt,Apparel,Consumer,41805,17001
+2024,North,T-Shirt,Apparel,Corporate,23895,10791
+2024,North,T-Shirt,Apparel,Small Business,9090,3942
+2024,North,Backpack,Apparel,Consumer,32890,12474
+2024,North,Backpack,Apparel,Corporate,47850,17226
+2024,North,Backpack,Apparel,Small Business,29370,10230
+2024,South,Smartphone,Electronics,Corporate,72000,10800
+2024,South,Headphones,Electronics,Consumer,17850,4200
+2024,South,Headphones,Electronics,Small Business,13825,4725
+2024,South,Smartwatch,Electronics,Corporate,27600,4560
+2024,South,Smartwatch,Electronics,Small Business,31600,8560
+2024,South,Tablet,Electronics,Consumer,17850,420
+2024,South,Tablet,Electronics,Corporate,80850,11130
+2024,South,Tablet,Electronics,Small Business,119700,15120
+2024,South,Office Chair,Furniture,Consumer,28875,7875
+2024,South,Office Chair,Furniture,Corporate,22125,6375
+2024,South,Office Chair,Furniture,Small Business,21000,5250
+2024,South,Standing Desk,Furniture,Consumer,50400,10980
+2024,South,Standing Desk,Furniture,Corporate,28800,2520
+2024,South,Standing Desk,Furniture,Small Business,14400,1260
+2024,South,Bookshelf,Furniture,Consumer,18200,4940
+2024,South,Bookshelf,Furniture,Corporate,11700,2860
+2024,South,Bookshelf,Furniture,Small Business,6500,2080
+2024,South,Notebook Pack,Stationery,Consumer,5025,1989
+2024,South,Notebook Pack,Stationery,Corporate,4650,1890
+2024,South,Notebook Pack,Stationery,Small Business,9038,3656
+2024,South,Pen Set,Stationery,Consumer,7218,3438
+2024,South,Pen Set,Stationery,Corporate,7128,3438
+2024,South,Pen Set,Stationery,Small Business,7758,3618
+2024,South,Printer Paper,Stationery,Consumer,5523,1883
+2024,South,Printer Paper,Stationery,Corporate,11025,4005
+2024,South,Printer Paper,Stationery,Small Business,12243,3923
+2024,South,Desk Organizer,Stationery,Consumer,7475,2951
+2024,South,Desk Organizer,Stationery,Corporate,8125,2847
+2024,South,Desk Organizer,Stationery,Small Business,7540,2639
+2024,South,Running Shoes,Apparel,Consumer,40950,13230
+2024,South,Running Shoes,Apparel,Corporate,16170,6090
+2024,South,Running Shoes,Apparel,Small Business,15540,5460
+2024,South,Jacket,Apparel,Consumer,13870,4446
+2024,South,Jacket,Apparel,Corporate,38000,14440
+2024,South,Jacket,Apparel,Small Business,14250,4826
+2024,South,T-Shirt,Apparel,Consumer,24390,10350
+2024,South,T-Shirt,Apparel,Corporate,7245,3033
+2024,South,T-Shirt,Apparel,Small Business,8820,4140
+2024,South,Backpack,Apparel,Consumer,27280,10692
+2024,South,Backpack,Apparel,Corporate,20350,7590
+2024,South,Backpack,Apparel,Small Business,48400,19052
+2024,West,Laptop,Electronics,Consumer,104000,18720
+2024,West,Laptop,Electronics,Corporate,46800,4160
+2024,West,Laptop,Electronics,Small Business,52000,9360
+2024,West,Smartphone,Electronics,Consumer,19200,-1200
+2024,West,Smartphone,Electronics,Small Business,48000,7200
+2024,West,Headphones,Electronics,Consumer,24500,8575
+2024,West,Headphones,Electronics,Corporate,12600,3500
+2024,West,Headphones,Electronics,Small Business,41300,14000
+2024,West,Smartwatch,Electronics,Consumer,8000,2240
+2024,West,Smartwatch,Electronics,Corporate,26400,3360
+2024,West,Smartwatch,Electronics,Small Business,34400,5600
+2024,West,Tablet,Electronics,Consumer,56700,4410
+2024,West,Tablet,Electronics,Corporate,59850,7560
+2024,West,Tablet,Electronics,Small Business,17850,420
+2024,West,Office Chair,Furniture,Consumer,75750,18000
+2024,West,Office Chair,Furniture,Corporate,6375,1125
+2024,West,Office Chair,Furniture,Small Business,39375,7875
+2024,West,Standing Desk,Furniture,Consumer,54000,14580
+2024,West,Standing Desk,Furniture,Corporate,50400,10980
+2024,West,Bookshelf,Furniture,Consumer,34775,8255
+2024,West,Bookshelf,Furniture,Corporate,35100,8580
+2024,West,Bookshelf,Furniture,Small Business,49075,13715
+2024,West,Sofa,Furniture,Consumer,140000,35000
+2024,West,Notebook Pack,Stationery,Consumer,12000,4548
+2024,West,Notebook Pack,Stationery,Corporate,8325,3357
+2024,West,Notebook Pack,Stationery,Small Business,8688,3306
+2024,West,Pen Set,Stationery,Consumer,7641,3501
+2024,West,Pen Set,Stationery,Corporate,4176,1926
+2024,West,Pen Set,Stationery,Small Business,8865,4005
+2024,West,Printer Paper,Stationery,Consumer,5019,1639
+2024,West,Printer Paper,Stationery,Corporate,10080,3320
+2024,West,Printer Paper,Stationery,Small Business,16968,6048
+2024,West,Desk Organizer,Stationery,Consumer,11472,4310
+2024,West,Desk Organizer,Stationery,Corporate,7898,2996
+2024,West,Desk Organizer,Stationery,Small Business,27268,10680
+2024,West,Running Shoes,Apparel,Consumer,72660,24780
+2024,West,Running Shoes,Apparel,Corporate,27090,9450
+2024,West,Running Shoes,Apparel,Small Business,43050,15330
+2024,West,Jacket,Apparel,Consumer,65740,20976
+2024,West,Jacket,Apparel,Corporate,7600,2888
+2024,West,Jacket,Apparel,Small Business,44080,15808
+2024,West,T-Shirt,Apparel,Consumer,19530,8298
+2024,West,T-Shirt,Apparel,Corporate,16335,6507
+2024,West,T-Shirt,Apparel,Small Business,20340,8640
+2024,West,Backpack,Apparel,Consumer,38390,15422
+2024,West,Backpack,Apparel,Corporate,25300,9988
+2024,West,Backpack,Apparel,Small Business,2200,924
+2025,East,Smartphone,Electronics,Consumer,92400,10800
+2025,East,Smartphone,Electronics,Corporate,58800,-2400
+2025,East,Smartphone,Electronics,Small Business,44400,3600
+2025,East,Headphones,Electronics,Consumer,29575,6825
+2025,East,Headphones,Electronics,Small Business,25550,7350
+2025,East,Smartwatch,Electronics,Consumer,16000,4480
+2025,East,Smartwatch,Electronics,Corporate,16000,4480
+2025,East,Tablet,Electronics,Consumer,40950,6090
+2025,East,Tablet,Electronics,Corporate,39900,5040
+2025,East,Tablet,Electronics,Small Business,36750,1890
+2025,East,Office Chair,Furniture,Consumer,27375,6375
+2025,East,Office Chair,Furniture,Small Business,19875,4125
+2025,East,Standing Desk,Furniture,Corporate,32400,6120
+2025,East,Bookshelf,Furniture,Corporate,5200,780
+2025,East,Bookshelf,Furniture,Small Business,24700,7020
+2025,East,Sofa,Furniture,Small Business,67200,4200
+2025,East,Notebook Pack,Stationery,Consumer,4962,2202
+2025,East,Notebook Pack,Stationery,Corporate,3012,1218
+2025,East,Notebook Pack,Stationery,Small Business,6475,2611
+2025,East,Pen Set,Stationery,Consumer,5463,2493
+2025,East,Pen Set,Stationery,Corporate,2763,1233
+2025,East,Pen Set,Stationery,Small Business,5265,2385
+2025,East,Printer Paper,Stationery,Consumer,11109,3829
+2025,East,Printer Paper,Stationery,Corporate,5901,2001
+2025,East,Printer Paper,Stationery,Small Business,12369,4049
+2025,East,Desk Organizer,Stationery,Consumer,3640,1378
+2025,East,Desk Organizer,Stationery,Corporate,1300,546
+2025,East,Desk Organizer,Stationery,Small Business,13488,4816
+2025,East,Running Shoes,Apparel,Consumer,75600,27720
+2025,East,Running Shoes,Apparel,Corporate,21840,6720
+2025,East,Running Shoes,Apparel,Small Business,28560,10920
+2025,East,Jacket,Apparel,Consumer,52250,19266
+2025,East,Jacket,Apparel,Corporate,24890,6042
+2025,East,Jacket,Apparel,Small Business,41800,15884
+2025,East,T-Shirt,Apparel,Consumer,3150,1278
+2025,East,T-Shirt,Apparel,Corporate,13905,6417
+2025,East,T-Shirt,Apparel,Small Business,8550,3870
+2025,East,Backpack,Apparel,Consumer,7480,2376
+2025,East,Backpack,Apparel,Corporate,2200,924
+2025,East,Backpack,Apparel,Small Business,28490,10626
+2025,North,Laptop,Electronics,Consumer,187200,16640
+2025,North,Laptop,Electronics,Corporate,52000,9360
+2025,North,Smartphone,Electronics,Consumer,67200,6000
+2025,North,Smartphone,Electronics,Corporate,93600,12000
+2025,North,Smartphone,Electronics,Small Business,96000,14400
+2025,North,Headphones,Electronics,Consumer,47425,15575
+2025,North,Headphones,Electronics,Corporate,20300,6650
+2025,North,Headphones,Electronics,Small Business,16800,5425
+2025,North,Smartwatch,Electronics,Consumer,29200,6160
+2025,North,Smartwatch,Electronics,Corporate,22800,5520
+2025,North,Smartwatch,Electronics,Small Business,30400,7360
+2025,North,Tablet,Electronics,Consumer,42000,7140
+2025,North,Tablet,Electronics,Corporate,37800,2940
+2025,North,Tablet,Electronics,Small Business,82950,13230
+2025,North,Office Chair,Furniture,Consumer,20625,4875
+2025,North,Office Chair,Furniture,Corporate,34875,8625
+2025,North,Office Chair,Furniture,Small Business,30000,9000
+2025,North,Standing Desk,Furniture,Consumer,18000,4860
+2025,North,Standing Desk,Furniture,Small Business,17100,3960
+2025,North,Bookshelf,Furniture,Consumer,12675,3835
+2025,North,Bookshelf,Furniture,Corporate,37700,11180
+2025,North,Bookshelf,Furniture,Small Business,18850,5590
+2025,North,Sofa,Furniture,Consumer,28000,7000
+2025,North,Sofa,Furniture,Corporate,106400,22400
+2025,North,Sofa,Furniture,Small Business,22400,1400
+2025,North,Notebook Pack,Stationery,Consumer,8375,3545
+2025,North,Notebook Pack,Stationery,Corporate,12250,4798
+2025,North,Notebook Pack,Stationery,Small Business,7325,3047
+2025,North,Pen Set,Stationery,Consumer,5283,2493
+2025,North,Pen Set,Stationery,Corporate,9333,4293
+2025,North,Pen Set,Stationery,Small Business,6732,3132
+2025,North,Printer Paper,Stationery,Consumer,13608,4248
+2025,North,Printer Paper,Stationery,Corporate,11046,3506
+2025,North,Printer Paper,Stationery,Small Business,6111,1951
+2025,North,Desk Organizer,Stationery,Consumer,19435,7371
+2025,North,Desk Organizer,Stationery,Corporate,19825,7384
+2025,North,Desk Organizer,Stationery,Small Business,8060,3159
+2025,North,Running Shoes,Apparel,Consumer,18480,5880
+2025,North,Running Shoes,Apparel,Corporate,54810,19530
+2025,North,Running Shoes,Apparel,Small Business,17640,5040
+2025,North,Jacket,Apparel,Consumer,7220,2508
+2025,North,Jacket,Apparel,Corporate,14060,4636
+2025,North,Jacket,Apparel,Small Business,19000,7220
+2025,North,T-Shirt,Apparel,Consumer,21690,9522
+2025,North,T-Shirt,Apparel,Corporate,36585,15525
+2025,North,T-Shirt,Apparel,Small Business,28845,12933
+2025,North,Backpack,Apparel,Consumer,21780,7744
+2025,North,Backpack,Apparel,Corporate,10120,3740
+2025,North,Backpack,Apparel,Small Business,4400,1848
+2025,South,Laptop,Electronics,Small Business,98800,13520
+2025,South,Smartphone,Electronics,Consumer,92400,10800
+2025,South,Smartphone,Electronics,Corporate,45600,4800
+2025,South,Headphones,Electronics,Consumer,51800,17675
+2025,South,Headphones,Electronics,Small Business,37275,9975
+2025,South,Smartwatch,Electronics,Consumer,31200,8160
+2025,South,Smartwatch,Electronics,Corporate,38000,9200
+2025,South,Smartwatch,Electronics,Small Business,32400,3600
+2025,South,Tablet,Electronics,Consumer,16800,-630
+2025,South,Tablet,Electronics,Corporate,54600,2310
+2025,South,Tablet,Electronics,Small Business,21000,3570
+2025,South,Office Chair,Furniture,Consumer,19500,3750
+2025,South,Office Chair,Furniture,Small Business,40875,9375
+2025,South,Standing Desk,Furniture,Consumer,79200,13500
+2025,South,Standing Desk,Furniture,Corporate,53100,13680
+2025,South,Bookshelf,Furniture,Consumer,13000,4160
+2025,South,Bookshelf,Furniture,Corporate,12025,3185
+2025,South,Bookshelf,Furniture,Small Business,31525,9425
+2025,South,Sofa,Furniture,Consumer,23800,2800
+2025,South,Sofa,Furniture,Corporate,53200,11200
+2025,South,Sofa,Furniture,Small Business,28000,7000
+2025,South,Notebook Pack,Stationery,Consumer,6725,2861
+2025,South,Notebook Pack,Stationery,Corporate,8450,3344
+2025,South,Notebook Pack,Stationery,Small Business,3412,1342
+2025,South,Pen Set,Stationery,Consumer,8307,3987
+2025,South,Pen Set,Stationery,Corporate,4923,2313
+2025,South,Pen Set,Stationery,Small Business,8532,3852
+2025,South,Printer Paper,Stationery,Consumer,11844,4044
+2025,South,Printer Paper,Stationery,Corporate,10437,3417
+2025,South,Printer Paper,Stationery,Small Business,6216,2056
+2025,South,Desk Organizer,Stationery,Consumer,9392,3360
+2025,South,Desk Organizer,Stationery,Corporate,10692,3906
+2025,South,Desk Organizer,Stationery,Small Business,6922,2776
+2025,South,Running Shoes,Apparel,Consumer,35490,12810
+2025,South,Running Shoes,Apparel,Corporate,32550,12390
+2025,South,Running Shoes,Apparel,Small Business,19320,6720
+2025,South,Jacket,Apparel,Consumer,3800,1444
+2025,South,Jacket,Apparel,Corporate,23560,7068
+2025,South,Jacket,Apparel,Small Business,28310,9462
+2025,South,T-Shirt,Apparel,Consumer,12375,5823
+2025,South,T-Shirt,Apparel,Corporate,4950,2142
+2025,South,T-Shirt,Apparel,Small Business,13230,5742
+2025,South,Backpack,Apparel,Consumer,17490,6006
+2025,South,Backpack,Apparel,Corporate,28160,10296
+2025,South,Backpack,Apparel,Small Business,15070,4862
+2025,West,Laptop,Electronics,Consumer,153400,25480
+2025,West,Laptop,Electronics,Corporate,104000,18720
+2025,West,Laptop,Electronics,Small Business,46800,4160
+2025,West,Smartphone,Electronics,Small Business,24000,3600
+2025,West,Headphones,Electronics,Consumer,34825,7525
+2025,West,Headphones,Electronics,Corporate,65450,19950
+2025,West,Headphones,Electronics,Small Business,78400,21525
+2025,West,Smartwatch,Electronics,Consumer,38400,9600
+2025,West,Smartwatch,Electronics,Corporate,64000,17920
+2025,West,Smartwatch,Electronics,Small Business,15600,4080
+2025,West,Tablet,Electronics,Consumer,72450,2730
+2025,West,Tablet,Electronics,Corporate,17850,420
+2025,West,Tablet,Electronics,Small Business,42000,7140
+2025,West,Office Chair,Furniture,Consumer,34875,8625
+2025,West,Office Chair,Furniture,Corporate,48750,12000
+2025,West,Office Chair,Furniture,Small Business,55875,13875
+2025,West,Standing Desk,Furniture,Consumer,51300,11880
+2025,West,Standing Desk,Furniture,Corporate,18000,4860
+2025,West,Standing Desk,Furniture,Small Business,18000,4860
+2025,West,Bookshelf,Furniture,Consumer,60775,16575
+2025,West,Bookshelf,Furniture,Corporate,12675,3835
+2025,West,Bookshelf,Furniture,Small Business,48100,12740
+2025,West,Sofa,Furniture,Consumer,84000,21000
+2025,West,Sofa,Furniture,Corporate,71400,8400
+2025,West,Sofa,Furniture,Small Business,81200,18200
+2025,West,Notebook Pack,Stationery,Consumer,5475,2163
+2025,West,Notebook Pack,Stationery,Corporate,11250,4350
+2025,West,Notebook Pack,Stationery,Small Business,13500,5220
+2025,West,Pen Set,Stationery,Consumer,12132,5562
+2025,West,Pen Set,Stationery,Corporate,7407,3447
+2025,West,Pen Set,Stationery,Small Business,13149,6129
+2025,West,Printer Paper,Stationery,Consumer,11844,3784
+2025,West,Printer Paper,Stationery,Corporate,12075,4275
+2025,West,Printer Paper,Stationery,Small Business,11949,4149
+2025,West,Desk Organizer,Stationery,Consumer,17420,6487
+2025,West,Desk Organizer,Stationery,Corporate,19598,7156
+2025,West,Desk Organizer,Stationery,Small Business,16088,5532
+2025,West,Running Shoes,Apparel,Consumer,48300,15540
+2025,West,Running Shoes,Apparel,Corporate,19320,6720
+2025,West,Running Shoes,Apparel,Small Business,41160,15960
+2025,West,Jacket,Apparel,Consumer,21660,7524
+2025,West,Jacket,Apparel,Corporate,24890,8398
+2025,West,Jacket,Apparel,Small Business,43130,14858
+2025,West,T-Shirt,Apparel,Consumer,21240,9540
+2025,West,T-Shirt,Apparel,Corporate,15165,6741
+2025,West,T-Shirt,Apparel,Small Business,14580,5688
+2025,West,Backpack,Apparel,Consumer,51150,17974
+2025,West,Backpack,Apparel,Corporate,50380,18480
+2025,West,Backpack,Apparel,Small Business,43780,15708

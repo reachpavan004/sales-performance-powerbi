@@ -1,0 +1,61 @@
+table 'Dim Calendar'
+	lineageTag: dfd20065-89a2-4f72-b095-d9071bc07239
+
+	column Date
+		dataType: dateTime
+		formatString: mmm yyyy
+		lineageTag: 03ee8458-7859-47c3-996e-458853e01368
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 0b31a088-5791-4f98-8267-b374299549c7
+			defaultHierarchy: LocalDateTable_c70a33d1-d607-4233-9c9e-6708b8f96cdb.'Date Hierarchy'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		isHidden
+		lineageTag: 69a77922-fec5-4ea8-bac5-e807ef8e8101
+		summarizeBy: none
+		sourceColumn: Year
+
+	column 'Month Number'
+		dataType: int64
+		isHidden
+		lineageTag: 4edbe68b-8dd3-4eba-a8e2-14e551d7195e
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: a04e6943-e791-485c-b535-e2a301916385
+		summarizeBy: none
+		sourceColumn: Month Name
+		sortByColumn: 'Month Number'
+
+	column 'Month Label'
+		dataType: string
+		lineageTag: 1122813d-a23e-402c-a6b0-151bd612d805
+		summarizeBy: none
+		sourceColumn: Month Label
+		sortByColumn: Date
+
+	partition 'Dim Calendar' = m
+		mode: import
+		source =
+				let
+					Start = #date(2023, 1, 1),
+					Months = List.Transform({0..35}, each Date.AddMonths(Start, _)),
+					Base = Table.FromColumns({Months}, type table [Date = date]),
+					AddYear = Table.AddColumn(Base, "Year", each Date.Year([Date]), Int64.Type),
+					AddMonthNo = Table.AddColumn(AddYear, "Month Number", each Date.Month([Date]), Int64.Type),
+					AddMonthName = Table.AddColumn(AddMonthNo, "Month Name", each Date.ToText([Date], "MMM", "en-US"), type text),
+					AddLabel = Table.AddColumn(AddMonthName, "Month Label", each Date.ToText([Date], "MMM", "en-US") & " " & Text.End(Number.ToText(Date.Year([Date])), 2), type text)
+				in
+					AddLabel
+
